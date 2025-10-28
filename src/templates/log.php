@@ -1,0 +1,7 @@
+<h1>Логін</h1>
+<form>
+    <label>Логін: <input type="text" name="login"></label><br>
+    <label>Пароль: <input type="password" name="password"></label><br>
+    <button type="submit">Увійти</button>
+</form>
+

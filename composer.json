@@ -1,0 +1,19 @@
+{
+    "name": "yan/composer",
+    "autoload": {
+        "psr-4": {
+            "Yan\\Composer\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Yan Korop"
+        }
+    ],
+    "require": {
+        "pecee/simple-router": "^5.4",
+        "monolog/monolog": "^3.9",
+        "symfony/var-dumper": "^7.3",
+        "nesbot/carbon": "^3.10"
+    }
+}

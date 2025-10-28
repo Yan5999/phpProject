@@ -1,0 +1,7 @@
+<nav>
+    <ul>
+        <li><a href="/">Головна</a></li>
+        <li><a href="/login">Логін</a></li>
+        <li><a href="/register">Реєстрація</a></li>
+    </ul>
+</nav>
