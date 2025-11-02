@@ -1,0 +1,5 @@
+.git/
+.vs/
+/vendor
+/temp
+/public/*.log

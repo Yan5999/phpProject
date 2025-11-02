@@ -1,0 +1,21 @@
+    <h1>Головна сторінка (файл src/templates/home.latte)</h1>
+    <p>
+        Привіт, {$user ?? 'Гість'}
+        <br>
+    </p>
+
+    <p>
+        В файлі scripts/scriptAsync.js є код, що асинхронно додає картинку.
+    </p>
+
+    <button id="btn" class="btn-success">Додати картинку</button>
+    
+    <p>
+        Картинка буде в цьому блоці &#8595;
+    </p>
+
+    <div id="div" class="card" style="list-style:none; display:flex; gap:1rem; flex-wrap:wrap; min-height:200px;">
+        
+    </div>
+
+    <script src="./scripts/scriptAsync.js" defer></script>

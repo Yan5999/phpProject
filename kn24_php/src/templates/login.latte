@@ -1,0 +1,59 @@
+    <h1>Нижче у нас форма, яка буде передавати дані на сервер методом POST</h1>
+    
+    {if isset($error)}
+        <div class="error-message">
+            {$error}
+        </div>
+    {/if}
+    
+    <form method="POST" action="/login">
+        <label for="login"></label>
+        <input 
+            type="text" 
+            name="login" 
+            id="login" 
+            placeholder="login" 
+            required
+            />
+        <label for="password"></label>
+        <div class="password-container">
+            <input 
+                type="password" 
+                name="password" 
+                id="password" 
+                placeholder="password" 
+                required
+            />
+            <button 
+                type="button" 
+                id="togglePassword" 
+            >
+                👁️
+            </button>
+        </div>
+        <input type="submit" value="Авторизуватись">
+    </form>
+
+    <script>
+        togglePassword = () => {
+            const passwordInput = document.getElementById('password');
+            const toggleButton = document.getElementById('togglePassword');
+            
+            if (passwordInput.type === 'password') {
+                passwordInput.type = 'text';
+                toggleButton.textContent = '🙈';
+                toggleButton.title = 'Сховати пароль';
+            } else {
+                passwordInput.type = 'password';
+                toggleButton.textContent = '👁️';
+                toggleButton.title = 'Показати пароль';
+            }
+        }
+        
+        // Додаємо підказку при завантаженні
+        document.addEventListener('DOMContentLoaded', () => {
+            let btn = document.getElementById('togglePassword');
+            btn.title = 'Показати пароль';
+            btn.addEventListener('click', togglePassword);
+        })
+    </script>

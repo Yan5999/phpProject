@@ -1,0 +1,14 @@
+{
+    "name": "teach23/kn24_php_psr4",
+    "description": "перебудовуємо проєкт по стандарту psr-4",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Classes\\": "src/Classes/"
+        }
+    },
+    "require": {
+        "pecee/simple-router": "^5.4",
+        "latte/latte": "^3.0"
+    }
+}
