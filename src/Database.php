@@ -18,8 +18,7 @@ class Database
     {
         if (self::$connection === null) {
             try {
-                $dsn = "mysql:host=" . self::$host . ";charset=utf8mb4";
-                
+                $dsn = "mysql:host=" . self::$host . ";charset=utf8mb4";              
                 $conn = new PDO($dsn, self::$username, self::$password);
                 $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
                 $conn->exec("CREATE DATABASE IF NOT EXISTS `" . self::$db_name . "`");
