@@ -17,9 +17,6 @@ class PageController
         $this->latte->setAutoRefresh(true);
     }
 
-    /**
-     * Отображает главную страницу
-     */
     public function home()
     {
         $params = [
@@ -29,9 +26,6 @@ class PageController
         $this->latte->render(__DIR__ . '/../templates/home.latte', $params);
     }
 
-    /**
-     * Отображает страницу логина
-     */
     public function login()
     {
         $params = [
@@ -40,9 +34,6 @@ class PageController
         $this->latte->render(__DIR__ . '/../templates/log.latte', $params);
     }
 
-    /**
-     * Отображает страницу регистрации
-     */
     public function register()
     {
         $params = [
@@ -51,9 +42,6 @@ class PageController
         $this->latte->render(__DIR__ . '/../templates/reg.latte', $params);
     }
 
-    /**
-     * Отображает страницу 404
-     */
     public function notFound()
     {
         http_response_code(404);
